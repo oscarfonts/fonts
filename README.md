@@ -4,7 +4,7 @@ This project packages the most common free fonts with
 [fontnik](https://github.com/mapbox/fontnik) so you don't have to
 worry about [SDL](https://www.mapbox.com/blog/text-signed-distance-fields/)
 and [gzipped PBFs](https://github.com/mapbox/mapbox-gl-js/issues/830).
-The fonts are deployed to http://demo.fonts.cat/fonts/ which also supports concatenating fonts.
+The fonts are deployed to http://fonts.cat/openmaptiles-fonts/ which DON'T support concatenating fonts.
 
 ## Configure Mapbox GL Style JSON
 
@@ -14,10 +14,10 @@ Your current Mapbox GL Style JSON configuration for `glyphs` will look like this
 "glyphs": "mapbox://fonts/openmaptiles/{fontstack}/{range}.pbf",
 ```
 
-In order to use the fonts without a Mapbox API key edit your Mapbox GL Style JSON and change the endpoint for `glyphs` to `http://fonts.openmaptiles.org/{fontstack}/{range}.pbf`.
+In order to use the fonts without a Mapbox API key edit your Mapbox GL Style JSON and change the endpoint for `glyphs` to `http://fonts.cat/openmaptiles-fonts/{fontstack}/{range}.pbf`.
 
 ```javascript
-"glyphs": "http://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+"glyphs": "http://fonts.cat/openmaptiles-fonts/{fontstack}/{range}.pbf",
 ```
 
 ## Supported Font Families
